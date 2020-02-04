@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Hoteles POO</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center cont mt-5">
+                <div class="d-flex align-items-center">
+                <button type="button" class="btn btn-info mr-2" onclick="addHotel()">Crear Hotel</button>
+                <button type="button" class="btn btn-info mr-2" onclick="darDeBajaHotel()">Eliminar Hotel</button>
+                <button type="button" class="btn btn-info mr-2" onclick="verHotel()">Ver Hotel</button>
+                <button type="button" class="btn btn-info" onclick="modificarHotel()">Modificar Hotel</button>
+                </div>
+        </div>
+
+        <div class="row d-none mt-4" id="createHotel">
+            <div class="col-12">
+                <div class="row">
+                    <label class="col-3" for="hotelName">Nombre del Hotel:</label>
+                    <input class="col-3" type="text" id="hotelName">
+                </div>
+                <div class="row">
+                    <label class="col-3" for="rooms">Número de Habitaciones:</label>
+                    <input class="col-3" type="text" id="rooms">
+                </div>
+                <div class="row">
+                    <label class="col-3" for="floors">Número de Plantas:</label>
+                    <input class="col-3" type="text" id="floors">
+                </div>
+                <div class="row">
+                    <label class="col-3" for="area">Superficie Total:</label>
+                    <input class="col-3" type="text" id="area">
+                </div>
+                
+                <button type="button" class="btn btn-warning mt-4" onclick="crearHotel()">Crear</button>    
+            </div> 
+        </div>
+        <p id="message" class="mt-4"></p>
+        
+    </div>
+
+    <style>
+        .cont {
+            height: 200px;
+            width: 600px;
+            background-color:gainsboro;
+        }
+
+   
+    </style>
+    
+    <script src="hotel.js"></script>
+    <script src="funciones.js"></script>
+    
+    
+</body>
+</html>
